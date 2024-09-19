@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
+    <title>WDD 231 | Web Frontend I | Adson Mettler</title>
+    <meta name="description" content="This page is dedicated to learning how to build dynamic websites using HTML, CSS, JavaScript, JSON, API, and UX design techniques. The final website in this repository was created during the WDD 231 classes, from September to December 2024. ">
+    <meta name="author" content="Adson Mettler do Nascimento">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/filtered-courses.js"></script>
 </head>
 <body>
-    
+    <header>
+        <!-- HEADER | NAVIGATION -->
+        <div class="header">
+            <div class="image-profile">
+                <img src="images/profile.png" alt="Adson Mettler profile photo" width="150">
+            </div>
+            <h1>Adson Mettler do<br>Nascimento</h1>
+        </div>
+        
+        
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://byui.instructure.com/">Home</a></li>
+                <li><a href="https://adsonmettler.github.io/wdd231-web-frontend-1/project/">Chamber</a></li>
+                <li><a href="https://github.com/adsonmettler">Github Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/adsonmettler/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- CONTENT SECTION -->
+        
+
+        <div class="bento-grid">
+            <section class="card">
+                <h2>Course Work</h2>
+                
+                <ul class="link">
+                    <li><a href="hhttps://adsonmettler.github.io/portfolio/">My Personal Portfolio</a></li>
+                    <li><a href="https://adsonmettler.github.io/wdd131-dynamic-web-fundamentals/project/">WDD 131 Website - CanadianXP</a></li>
+                    <li><a href="https://adsonmettler.github.io/wdd130/wwr/index.html">WDD 130 Website - WeRadical Rafting</a></li>    
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Toronto Canada</h2>
+                <div class="image">
+                    <img src="images/canada-toronto-summer2023.jpg" alt="Toronto skyline" width="150">
+                </div>
+                <p>Nathan Phillips Square.</p>
+            </section>
+
+            <section class="card large-card">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <!-- Buttons for filtering -->
+                <div class="courses-type">
+                    <button class="filter-btn" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="CSE">CSE</button>
+                    <button class="filter-btn" data-filter="WDD">WDD</button>
+                </div>
+
+                <!-- Courses to be filtered -->
+                <div class="courses">
+                    
+                    <p>Total Credits: <span id="total-credits"></span></p>
+                </div>
+
+            </section>
+        </div>
+
+
+        
+    </main>
+    <footer>
+        <p id="year">&copy; <span class="highlight">YYYY</span> Adson Mettler do Nascimento | Toronto, Canada</p>
+        <p id="lastModifiedDate" class="highlight">Last modified: </p>
+    </footer>
 </body>
 </html>
