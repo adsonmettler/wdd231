@@ -39,6 +39,11 @@ main {
     background: rgb(254, 250, 224);
 }
 
+#menu {
+    display: none; /* hide hamburger button */
+}
+
+
 .image-profile {
     display: block;
     width: 12%;
