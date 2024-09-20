@@ -1,6 +1,6 @@
 
 
-
+@media screen and (min-width: 767px) {
 
 * {
 	margin: 0;
@@ -41,60 +41,18 @@ main {
 
 .image-profile {
     display: block;
-    justify-content: center;
-    width: 30%;
+    width: 12%;
     padding: 1em;
 }
 
 h1 {
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 3rem;
     text-align: center;
     padding: 1em;
     color: rgb(188, 108, 37);
 }
 
-/* HAMBURGUER MENU */
-
-.navigation {
-    display: none;
-}
-
-
-#menu {
-	font-size: 2rem;
-    font-family: "Montserrat";
-    font-weight: 300;
-	border: 0;
-	background: none;
-	color: white;
- 	position: absolute;
-    top: 1rem;
-    right: 2rem;
-    padding: 0;
-    
-}
-
-#menu::before {
-	content: "☰";
-}
-
-/* ▼ */
-
-#menu.open::before {
-	content: "X";
-    color: var(--accent1-color);
-    font-weight: 600;
-}
-
-/* when the button is clicked - the open class is toggled (added/removed) */
-.navigation.open {
-	display: block;
-}
-
-
-
-/* NAVIGATION */
 
 nav {
     display: flex;
@@ -124,11 +82,12 @@ nav a:hover {
 /* MAIN */
 
 .bento-grid {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
+    max-width: 800px;
     margin: 0 auto; /* Center the grid horizontally */
-    box-sizing: border-box;
 }
 
 .card {
@@ -136,6 +95,7 @@ nav a:hover {
     color: white;
     padding: 20px;
     margin: 20px;
+    margin-left: 2px;
     border-radius: 8px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
@@ -221,6 +181,7 @@ img {
 
 .courses {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
@@ -260,14 +221,4 @@ footer p {
     color: #DDFCAD;
 }
 
-
-@media (min-width: 640px) {
-	nav ul {
-		display: flex;
-        list-style-type: none;
-        width: 500px;
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}
 }
