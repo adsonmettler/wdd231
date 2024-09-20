@@ -1,4 +1,6 @@
-// JavaScript function to make Hamburguer menu button interaction and also a filter buttons interaction
+// JavaScript function to make Hamburguer menu button interaction
+// and also a filter buttons interaction
+
 // Author: Adson Mettler do Nascimento
 
 
@@ -13,7 +15,7 @@ hamButton.addEventListener('click', () => {
 });
 
 
-// COURSES OBJECTS
+// COURSES ITEMS OBJECTS
 
 document.addEventListener('DOMContentLoaded', function () {
 
