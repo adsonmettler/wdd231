@@ -1,0 +1,224 @@
+
+
+@media screen and (min-width: 767px) {
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: white;
+    color: white;
+    justify-content: center;
+    width: 100%;
+}
+
+html, body {
+    max-width: 100%;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADEAR */
+
+main {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: .1em;
+    margin: 0;
+    background: rgb(254, 250, 224);
+}
+
+.image-profile {
+    display: block;
+    width: 12%;
+    padding: 1em;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1em;
+    color: rgb(188, 108, 37);
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: .9rem;
+    background-color: rgb(40, 54, 24);
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #DDFCAD;
+    font-weight: 500;
+    margin: 14px 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgb(40, 54, 24);
+    color: rgb(221, 161, 94);
+}
+
+
+/* MAIN */
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+.card {
+    background-color: white;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 2px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #0D1821;
+    margin-left: 20px;
+}
+
+.link a {
+    transition: color 0.2s ease-in-out;
+    color: #0D1821;
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: #FF8552;
+}
+
+
+.image {
+    margin-left: 20px;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    background-color: rgb(254, 250, 224);
+    color: rgb(188, 108, 37);
+    padding: 20px;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.card li {
+    margin-top: 20px;
+    margin: 20px;
+    color: #FF8552;
+}
+
+
+.large-card {
+    grid-column: span 2;
+}
+
+.courses-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 15px;
+    background-color: rgb(96, 108, 56);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.filter-btn:hover {
+    background-color: rgb(40, 54, 24);
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.course-item.highlight {
+    background-color: rgb(188, 108, 37); /* Style for completed courses */
+    font-weight: 600;
+    color: white;
+}
+
+.course-item {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: rgb(40, 54, 24);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #FF8552;
+}
+
+.highlight {
+    color: #DDFCAD;
+}
+
+}
