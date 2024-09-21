@@ -92,6 +92,11 @@ h1 {
 	display: block;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+
 nav a.active {
     text-decoration: underline;
     text-underline-offset: 5px;
