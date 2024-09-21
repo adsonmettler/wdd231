@@ -92,6 +92,13 @@ h1 {
 	display: block;
 }
 
+nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+    color: rgb(221, 161, 94);
+}
+
 @media (min-width: 640px) {
     #menu {
         display: none; /* hide hamburger button */
@@ -109,6 +116,8 @@ h1 {
     nav ul li {
         flex: 1 1 100%;
     }
+
+    
 }
 
 /* NAVIGATION */
