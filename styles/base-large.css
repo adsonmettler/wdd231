@@ -48,11 +48,12 @@ main {
     display: block;
     width: 12%;
     padding: 1em;
+    max-width: 180px;
 }
 
 h1 {
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     padding: 1em;
     color: rgb(188, 108, 37);
