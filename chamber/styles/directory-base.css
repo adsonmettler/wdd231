@@ -165,7 +165,7 @@ h1 {
     color: var(--primary-color); /* Text color on hover */
 }
 
-hr {
+.header-separator {
     display: none;
 }
 
