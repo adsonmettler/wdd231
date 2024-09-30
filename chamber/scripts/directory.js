@@ -27,6 +27,7 @@
                 <p><strong>Phone:</strong> ${member.phone_number}</p>
                 <p><strong>Website:</strong> <a href="${member.website_url}" target="_blank">${member.website_url}</a></p>
                 <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membership_level)}</p>
+                <p class="company-founded"><strong>Founded:</strong> <span class="founded-year">${member.founded}</span></p>
             `;
 
             container.appendChild(memberCard);

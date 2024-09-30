@@ -1,3 +1,48 @@
+:root {
+	--primary-color: rgb(100, 200, 140);
+ --secondary-color: rgb(23, 53, 53);
+  --accent1-color: rgb(125, 225, 227);
+	--accent2-color: rgb(105, 222, 193);
+	--accent3-color: rgb(12, 22, 21);
+}
+
+
+
+@media (min-width: 1000px) {
+    .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style-type: none; /* Removing bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the items */
+  }
+  
+  .nav-links li {
+    margin: 0 15px; /* Spacing between links */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(23, 53, 53);
+    padding: 10px 15px; /* Space around the text */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover Effects */
+  .nav-links a:hover {
+    color: rgb(100, 200, 140);
+  }
+}
+
+
+
 
 #directory-container {
     display: grid;
