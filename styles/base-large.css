@@ -39,7 +39,7 @@ main {
     background: rgb(254, 250, 224);
 }
 
-#menu {
+#menubutton {
     display: none; /* hide hamburger button */
 }
 

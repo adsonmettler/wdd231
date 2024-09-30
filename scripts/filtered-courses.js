@@ -6,8 +6,8 @@
 
 // Menu Navagation | Hamburguer menu button
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const hamButton = document.querySelector('#menubutton');
+const navigation = document.querySelector('.navigation-links');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
