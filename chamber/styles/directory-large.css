@@ -14,9 +14,58 @@
         align-items: center;
     }
 
+    .header {
+        box-shadow: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        border: 1px solid rgba(99, 216, 255, 0.2);
+        box-shadow: 0 0 20px rgba(12, 22, 21, 0.8);
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    /*----------- NAVIGATION --------------*/
+nav {
+    background-color: white;
+    font-size: 0.9rem; /* Font size for navigation */
+}
+
+nav ul {
+    display: flex; /* Horizontal layout for nav items */
+    list-style-type: none; /* Remove default list styling */
+    justify-content: center; /* Center nav items */
+    padding: 1rem 0; /* Padding for nav */
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(23, 53, 53); /* Text color for links */
+    font-weight: 500;
+    margin: 0 1rem; /* Margin between links */
+    padding: 0.5rem 1rem; /* Padding around links */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition effects */
+}
+
+nav a:hover {
+    color: rgb(100, 200, 140); /* Change text color on hover */
+}
+
+nav a.active-menu-link {
+    text-decoration: underline; /* Underline for active link */
+    text-underline-offset: 5px; /* Offset for underline */
+    text-decoration-thickness: 1px; /* Thickness for underline */
+}
+
   
   /* Navigation Links */
-  .nav-links {
+  .navigation-links {
     list-style-type: none; /* Removing bullet points */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
@@ -24,11 +73,11 @@
     justify-content: center; /* Center the items */
   }
   
-  .nav-links li {
+  .navigation-links li {
     margin: 0 15px; /* Spacing between links */
   }
   
-  .nav-links a {
+  .navigation-links a {
     text-decoration: none; /* Remove underline */
     color: rgb(23, 53, 53);
     padding: 10px 15px; /* Space around the text */
@@ -36,7 +85,7 @@
   }
   
   /* Hover Effects */
-  .nav-links a:hover {
+  .navigation-links a:hover {
     color: rgb(100, 200, 140);
   }
 }

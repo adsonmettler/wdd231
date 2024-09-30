@@ -1,5 +1,16 @@
 
-    async function fetchMembers() {
+// Menu Navagation | Hamburguer menu button
+
+const hamButton = document.querySelector('#menubutton');
+const navigation = document.querySelector('#animatemenu');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+
+async function fetchMembers() {
         try {
             const response = await fetch('data/members.json'); // Replace with your actual JSON file path
             if (!response.ok) {
