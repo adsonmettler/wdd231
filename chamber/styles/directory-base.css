@@ -267,6 +267,11 @@ nav a.active-menu-link {
     color: #989898;
 }
 
+footer p {
+    width: 100%;
+    justify-content: center;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .footer-section {
