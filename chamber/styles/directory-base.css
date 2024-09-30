@@ -36,8 +36,12 @@ html, body {
     overflow: hidden;
 }
 
+
+
 #menu {
     display: none; /* hide hamburger button */
+}.image-logo img {
+    width: 6rem;
 }
 
 
@@ -61,25 +65,44 @@ nav a:hover {
 }
 
 
-.resume {
-    position: relative;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 18px;
-    padding: 10px 14px;
-    margin: 0 0 0 1rem;
-    font-weight: 600;
-    font-size: .8rem;
-    transition: box-shadow 0.3s ease-in-out, color 0.5s ease-in-out;
+
+
+
+/*----------- MAIN --------------*/
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-.resume:hover {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: solid 1px var(--primary-color);
-    font-weight: 600;
-    box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
+.member-card {
+    border: 1px solid var(--accent2-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: inline-block;
 }
+
+.member-card img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.member-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    margin: 5px 0;
+}
+
+
 
 
 
@@ -90,6 +113,10 @@ nav a:hover {
     background: linear-gradient(to top, rgb(12, 22, 21), rgb(23, 53, 53));
     color: white;
     padding: 40px 0 0 0;
+}
+
+.footer-logo img {
+    width: 6rem;
 }
 
 .footer-container {

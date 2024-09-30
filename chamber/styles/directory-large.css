@@ -1,0 +1,24 @@
+
+#directory-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* space between the cards */
+    max-width: 1200px; /* you can adjust this if needed */
+    margin: 0 auto; /* center the grid */
+    padding: 20px;
+}
+
+
+/* For smaller screens, adjust the grid layout */
+@media (max-width: 1000px) {
+    #directory-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 660px) {
+    #directory-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        justify-items: center;
+    }
+}
