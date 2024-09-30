@@ -60,6 +60,42 @@ h1 {
     color: rgb(23, 53, 53);
 }
 
+#directory-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the size as needed */
+    gap: 1rem; /* Space between grid items */
+}
+
+#directory-container.list {
+    display: block; /* Stack items vertically */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.menu button {
+    background-color: rgb(23, 53, 53);
+    border: 1px solid var(--primary-color);
+    color: rgb(100, 200, 140);
+    padding: .8rem 3rem;
+    cursor: pointer;
+    border-radius: 45px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu button:hover {
+    background-color: transparent; /* Background color on hover */
+    color: var(--primary-color); /* Text color on hover */
+}
+
+hr {
+    display: none;
+}
+
 .member-card {
     border: 1px solid var(--accent2-color);
     border-radius: 8px;

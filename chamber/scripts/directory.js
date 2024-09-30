@@ -46,3 +46,32 @@
     // Call fetchMembers when the page loads
     window.onload = fetchMembers;
 
+
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const container = document.getElementById('directory-container'); // Reference to the container
+
+// Default view: Set to grid or list based on your preference
+let currentView = 'grid'; // You can set this to 'list' if you prefer a default list view
+
+function updateView() {
+    container.classList.remove('grid', 'list'); // Remove both classes
+    container.classList.add(currentView); // Add the current view class
+}
+
+gridbutton.addEventListener("click", () => {
+    currentView = 'grid'; // Set current view to grid
+    updateView(); // Update the display
+});
+
+listbutton.addEventListener("click", () => {
+    currentView = 'list'; // Set current view to list
+    updateView(); // Update the display
+});
+
+// Call fetchMembers when the page loads
+window.onload = async () => {
+    await fetchMembers();
+    updateView(); // Ensure the correct view is applied after fetching
+};
