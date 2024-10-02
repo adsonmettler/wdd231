@@ -25,8 +25,7 @@
         color: white;
         border: 1px solid rgba(99, 216, 255, 0.2);
         box-shadow: 0 0 20px rgba(12, 22, 21, 0.8);
-        max-width: 100%;
-        padding: 0 25px;
+        width: 100%;
     }
 
     /*----------- NAVIGATION --------------*/
@@ -37,20 +36,6 @@ nav {
 
 nav ul {
     display: flex; /* Horizontal layout for nav items */
-    list-style-type: none; /* Remove default list styling */
-    justify-content: center; /* Center nav items */
-    padding: 1rem 0; /* Padding for nav */
-}
-
-nav a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(23, 53, 53); /* Text color for links */
-    font-weight: 500;
-    margin: 0 1rem; /* Margin between links */
-    padding: 0.5rem 1rem; /* Padding around links */
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition effects */
 }
 
 nav a:hover {
@@ -65,22 +50,14 @@ nav a.active-menu-link {
 
   
   /* Navigation Links */
-  .navigation-links {
-    list-style-type: none; /* Removing bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Align items in a row */
-    justify-content: center; /* Center the items */
-  }
-  
-  .navigation-links li {
-    margin: 0 15px; /* Spacing between links */
-  }
   
   .navigation-links a {
+    list-style-type: none; /* Removing bullet points */
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the items */
     text-decoration: none; /* Remove underline */
+    font-weight: 500;
     color: rgb(23, 53, 53);
-    padding: 10px 15px; /* Space around the text */
     transition: background-color 0.3s, color 0.3s;
   }
   

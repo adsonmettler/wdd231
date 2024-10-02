@@ -22,20 +22,15 @@ html, body {
 .header {
     background: white; /* Light background */
     display: grid;
-    grid-template-columns: 90px auto 90px; /* Logo, Title, Menu Button */
     align-items: center; /* Center items vertically */
-    padding: 1rem; /* Padding around header */
+    padding: .1em 1em; /* Padding around header */
     box-shadow: 0 0 20px rgba(12, 22, 21, 0.8);
 }
 
 .image-logo img {
-    width: 6rem; /* Adjust logo size */
+    width: 7rem; /* Adjust logo size */
 }
 
-.image-profile {
-    margin-bottom: .5em;
-    padding-left: 1.5em; /* Padding for profile image */
-}
 
 
 
@@ -46,10 +41,8 @@ nav {
 }
 
 nav ul {
-    display: flex; /* Horizontal layout for nav items */
     list-style-type: none; /* Remove default list styling */
     justify-content: center; /* Center nav items */
-    padding: 1rem 0; /* Padding for nav */
 }
 
 nav a {
@@ -85,7 +78,7 @@ nav a.active-menu-link {
     border: 0;
     color: rgb(23, 53, 53); /* Color for hamburger button */
     position: absolute;
-    top: 1rem;
+    top: .4rem;
     right: 1rem;
     padding: .25rem 2vw;
 }
