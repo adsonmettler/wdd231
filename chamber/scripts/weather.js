@@ -21,7 +21,6 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // testing only
         displayResults(data); // uncomment when ready
       } else {
           throw Error(await response.text());
@@ -33,7 +32,7 @@ async function apiFetch() {
 
 //   DISPLAY THE JSON DATA ONTO MY WEB PAGE
     function displayResults(data) {
-    console.log('hello')
+    
     weatherLocal.innerHTML = data.name
     weatherDesc.innerHTML = data.weather[0].description
     weatherTemp.innerHTML = `${data.main.temp}&deg;C`

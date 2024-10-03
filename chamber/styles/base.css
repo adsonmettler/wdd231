@@ -66,7 +66,9 @@ nav a.active-menu-link {
     text-decoration-thickness: 1px; /* Thickness for underline */
 }
 
-/* HAMBURGER MENU */
+
+/*----------- HAMBURGER MENU --------------*/
+
 #menubutton {
     font-size: 2rem;
     background: none;
@@ -116,7 +118,79 @@ nav a.active-menu-link {
 }
 
 
+/*----------- HERO SECTION --------------*/
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 15em;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.hero-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: rgb(23, 53, 53);
+}
+
+p {
+    font-size: .9rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #2ecc71;
+}
+
+.hero-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+/*----------- DIRECTORY CARDS --------------*/
 
 .header-separator {
     display: none;
@@ -147,6 +221,35 @@ nav a.active-menu-link {
 .member-card p {
     margin: .8rem 0;
 }
+
+/*----------- WEATHER CARD --------------*/
+
+.card-weather {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgb(105, 222, 193);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-weather h2 {
+    color: rgb(23, 53, 53);
+    margin: .3rem 0;
+}
+
+.card-weather #description {
+    text-transform: capitalize;
+    color: rgb(23, 53, 53);
+    margin: .3rem 0;
+}
+
+.card-weather #temperature {
+    font-size: 2rem;
+    color: rgb(23, 53, 53);
+    margin: .3rem 0;
+}
+
+
+
 
 /*----------- FOOTER --------------*/
 .footer {
