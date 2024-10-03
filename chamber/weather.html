@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Forecast Page</title>
+    <link rel="stylesheet" href="styles/weather-base.css">
+    <script defer src="scripts/weather.js"></script>
 </head>
 <body>
 
-    <h1>OpenWeatherMap.org API Test</h1>
 <main>
-  <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-  <figure>
-    <img id="weather-icon" src="" alt="">
-    <figcaption></figcaption>
-  </figure>
+  <h1>The current temperature in</h1>
+  <div>
+    <h2 id="town">Toronto, Canada</h2>
+        <img id="weather-icon" src="images/canada-toronto.jpeg" alt="Toronto, Canada">
+        <p id="description"></p>
+        <p id="temperature"></p>
+  </div>
+  
 </main>
 <footer>
-  [Enter Your Name Here] | OpenWeatherMap.org | CC BY-SA 4.0
+  Adson Mettler do Nascimento | OpenWeatherMap.org | CC BY-SA 4.0
 </footer>
 
 </body>
