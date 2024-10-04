@@ -25,6 +25,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 <body>
     <header>
@@ -63,11 +64,54 @@
             <img src="images/hero-image.png" alt="People developing business together through Mettler Chamber of Commerce hub" class="hero-image">
         </div>
 
+<!-- EVENTS AND WEATHER SECTION -->
+<h1>Home</h1>
+<div class="weather-container">
 
-        <h1>Home</h1>
+    <div class="card-events">
+        <h2>Events</h2>
+        <h3 id="event-title">Upcoming Event Title</h3>
+        <p id="event-description">Upcoming a list soon</p>
+        <p id="event-date">Date: TBD</p>
+    </div>
+
+    <div class="card-weather">
+        <h2>Current Weather</h2>
+        <h3 id="town"></h3>
+        <img id="weather-icon" src="" alt="Weather icon">
+        <p id="description"></p>
+        <p id="temperature"></p>
+    </div>
+
+    <div class="card-forecast">
+        <h2>Weather Forecast</h2>
+        <h3 id="forecast-town"></h3>
+    
+        <div id="today">
+            <p>Today: <span id="forecast-temp-today"></span></p>
+        </div>
+    
+        <div id="next-day">
+            <p id="day-name-next"></p>
+            <p><span id="forecast-temp-next"></span></p>
+        </div>
+    
+        <div id="day-after-next">
+            <p id="day-name-after"></p>
+            <p><span id="forecast-temp-after"></span></p>
+        </div>
+    </div>
+    
+    
+    
+</div>
+
+
+        <!-- DIRECTORY SECTION -->
         
         <hr class="header-separator">
         <div id="directory-container"></div> <!-- Container for displaying member info -->
+
     </main>
 
     <footer class="footer">

@@ -118,79 +118,66 @@ nav a.active-menu-link {
 }
 
 
-/*----------- HERO SECTION --------------*/
+/*----------- HERO SECTION FOR MOBILE --------------*/
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5em 15em;
-    background-color: #f0f4f8;
-    color: #333;
-}
-
-.hero-text {
-    max-width: 50%;
-    text-align: left;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 20px 0;
-    color: rgb(23, 53, 53);
-}
-
-p {
-    font-size: .9rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.hero-btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #27ae60;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.hero-btn:hover {
-    background-color: #2ecc71;
-}
-
-.hero-image {
-    max-width: 45%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
     .hero {
+        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         text-align: center;
+        padding: 20px
+    }
+
+    .hero-text {
+        max-width: 90%;          /* Slightly reduces the width for better spacing */
+        margin-bottom: 20px;     /* Space between text and image */
+    }
+
+    .hero-image {
+        max-width: 100%;         /* Ensures the image is responsive */
+        height: auto;            /* Maintains aspect ratio */
+        margin-top: 20px;        /* Space above the image */
     }
 
     .hero-text {
         max-width: 100%;
-        margin-bottom: 20px;
+        text-align: left;
+        margin: 2em;
     }
 
-    .hero-image {
-        max-width: 100%;
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 20px 0;
+        color: rgb(23, 53, 53);
     }
-}
+    
+    p {
+        font-size: .9rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #555;
+    }
 
+    .hero-btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #27ae60;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+    }
 
 
 
 
 /*----------- DIRECTORY CARDS --------------*/
+
+#directory-container {
+    width: 100%;
+}
 
 .header-separator {
     display: none;
@@ -200,11 +187,9 @@ p {
     border: 1px solid var(--accent2-color);
     border-radius: 8px;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem;
     background-color: white;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    display: inline-block;
 }
 
 .member-card img {
@@ -224,16 +209,69 @@ p {
 
 /*----------- WEATHER CARD --------------*/
 
-.card-weather {
+.weather-container {
+    width: 100%;
+}
+
+.weather-container h1 {
+    margin: 1em .5em;
+    color: rgb(23, 53, 53);
+    font-size: 1.8rem;
+}
+
+.card-events {
     border: 1px solid rgb(12, 22, 21);
-    background-color: rgb(105, 222, 193);
+    background-color: rgb(100, 200, 140, 0.4);
     border-radius: 10px;
     text-align: center;
+    margin: 2em 1em;
+}
+
+.card-events h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.card-events h3 {
+    color: rgb(23, 53, 53);
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+}
+
+.card-events p {
+    color: rgb(23, 53, 53);
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+}
+
+
+.card-weather {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgb(100, 200, 140, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2em 1em;
 }
 
 .card-weather h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.card-weather h3 {
     color: rgb(23, 53, 53);
-    margin: .3rem 0;
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
 }
 
 .card-weather #description {
@@ -243,6 +281,48 @@ p {
 }
 
 .card-weather #temperature {
+    font-size: 2rem;
+    color: rgb(23, 53, 53);
+    margin: .3rem 0;
+}
+
+
+/*----------- FORECAST CARD --------------*/
+
+
+
+
+.card-forecast {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgb(100, 200, 140, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2em 1em;
+}
+
+.card-forecast h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.card-forecast h3 {
+    color: rgb(23, 53, 53);
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+}
+
+.card-forecast #forecast-description {
+    text-transform: capitalize;
+    color: rgb(23, 53, 53);
+    margin: .3rem 0;
+}
+
+.card-forecast #forecast-temp {
     font-size: 2rem;
     color: rgb(23, 53, 53);
     margin: .3rem 0;
