@@ -22,6 +22,10 @@
         color: white;
         box-shadow: 0 0 20px rgba(12, 22, 21, 0.8);
         width: 100%;
+        position: fixed;  /* Fix header position */
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
 
     /*----------- NAVIGATION --------------*/

@@ -19,11 +19,18 @@ html, body {
 }
 
 /*----------- HEADER --------------*/
+
 header {
     background: white; /* Light background */
     display: grid;
     align-items: center; /* Center items vertically */
     box-shadow: 0 0 20px rgba(12, 22, 21, 0.4);
+    position: fixed;  /* Fix header position */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it covers the full width */
+    z-index: 1000; /* Make sure it stays above content */
+    padding: 10px 0;
 }
 
 .image-logo img {
@@ -80,7 +87,7 @@ nav a.active-menu-link {
     border: 0;
     color: rgb(23, 53, 53); /* Color for hamburger button */
     position: absolute;
-    top: .4rem;
+    top: 1rem;
     right: 1rem;
     padding: .25rem 2vw;
 }
@@ -129,14 +136,15 @@ nav a.active-menu-link {
     }
 
     .hero-text {
-        max-width: 90%;          /* Slightly reduces the width for better spacing */
-        margin-bottom: 20px;     /* Space between text and image */
+        max-width: 90%;
+        margin-bottom: 20px;
     }
 
     .hero-image {
-        max-width: 100%;         /* Ensures the image is responsive */
-        height: auto;            /* Maintains aspect ratio */
-        margin-top: 20px;        /* Space above the image */
+        max-width: 100%;
+        height: auto;
+        margin-top: 2em;
+        padding-top: 2em;
     }
 
     .hero-text {
