@@ -343,6 +343,14 @@ h1 {
     margin: 0 auto;
 }
 
+.spotlight-div h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(23, 53, 53);
+    font-size: 2.4rem;
+    margin: 2em 0 0 0;
+}
+
 .spotlight-card {
     border: 1px solid var(--accent2-color);
     border-radius: 8px;
