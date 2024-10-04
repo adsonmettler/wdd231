@@ -177,6 +177,12 @@ nav a.active-menu-link {
 
 /*----------- WEATHER CARD --------------*/
 
+.main-container {
+    background-color: #f0f4f8;
+    padding: 2em 0;
+}
+
+
 h1 {
     margin: 1em .8em;
     color: rgb(23, 53, 53);
@@ -186,7 +192,6 @@ h1 {
 .weather-container {
     width: 100%;
 }
-
 
 
 .card-events {
@@ -401,6 +406,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1200px;
 }
 
 .footer-links {
