@@ -30,11 +30,11 @@ header {
     left: 0;
     width: 100%; /* Ensure it covers the full width */
     z-index: 1000; /* Make sure it stays above content */
-    padding: 10px 0;
+    padding: 0;
 }
 
 .image-logo img {
-    width: 7rem; /* Adjust logo size */
+    width: 9rem; /* Adjust logo size */
     margin: .1em 1em;
 }
 
