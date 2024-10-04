@@ -237,6 +237,8 @@ h1 {
 .card-forecast h3,
 .card-forecast p {
     margin: 1em;
+    text-transform: capitalize;
+    color: rgb(23, 53, 53);
 }
 
 
