@@ -44,7 +44,7 @@ header {
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: rgb(23, 53, 53); /* Dark background for nav */
-    font-size: 0.9rem; /* Font size for navigation */
+    font-size: 1rem; /* Font size for navigation */
 }
 
 nav ul {
@@ -59,7 +59,7 @@ nav a {
     color: rgb(100, 200, 140); /* Text color for links */
     font-weight: 500;
     margin: 0 1rem; /* Margin between links */
-    padding: 0.5rem 1rem; /* Padding around links */
+    padding: 1.4rem 1rem; /* Padding around links */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transition effects */
 }
 
