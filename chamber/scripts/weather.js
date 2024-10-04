@@ -96,8 +96,8 @@ function displayForecast(data) {
     const dayAfterNext = new Date(today);
     dayAfterNext.setDate(today.getDate() + 2); // Calculate the day after the next
     
-    dayNameNext.innerHTML = `Tomorrow: ${getDayName(nextDay)}`; // Display next day's name
-    dayNameAfter.innerHTML = `Day After: ${getDayName(dayAfterNext)}`; // Display day after next's name
+    dayNameNext.innerHTML = `${getDayName(nextDay)}:`; // Display next day's name
+    dayNameAfter.innerHTML = `${getDayName(dayAfterNext)}:`; // Display day after next's name
 
     // Display forecast temperatures for the next two days
     forecastTempNext.innerHTML = `${nextDayForecast.main.temp}&deg;C`;

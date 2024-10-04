@@ -26,6 +26,7 @@
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/directory.js"></script>
     <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
 </head>
 <body>
     <header>
@@ -51,10 +52,10 @@
         
     </header>
 
-    <main>
+<main>
 
         <!-- HERO SECTION -->
-
+    <div class="hero-container">
         <div class="hero">
             <div class="hero-text">
                 <h2>Empowering Local Businesses to Strengthen the Toronto Community</h2>
@@ -63,56 +64,59 @@
             </div>
             <img src="images/hero-image.png" alt="People developing business together through Mettler Chamber of Commerce hub" class="hero-image">
         </div>
-
-<!-- EVENTS AND WEATHER SECTION -->
-<h1>Home</h1>
-<div class="weather-container">
-
-    <div class="card-events">
-        <h2>Events</h2>
-        <h3 id="event-title">Upcoming Event Title</h3>
-        <p id="event-description">Upcoming a list soon</p>
-        <p id="event-date">Date: TBD</p>
     </div>
 
-    <div class="card-weather">
-        <h2>Current Weather</h2>
-        <h3 id="town"></h3>
-        <img id="weather-icon" src="" alt="Weather icon">
-        <p id="description"></p>
-        <p id="temperature"></p>
+    <!-- EVENTS AND WEATHER SECTION -->
+    <div class="main-container">
+        <!-- <h1>Home</h1> -->
+        <div class="weather-container">
+
+            <div class="card-events">
+                <h2>Events</h2>
+                <h3 id="event-title">Upcoming Event Title</h3>
+                <p id="event-description">Upcoming a list soon</p>
+                <p id="event-date">Date: TBD</p>
+            </div>
+
+            <div class="card-weather">
+                <h2>Current Weather</h2>
+                <h3 id="town"></h3>
+                <img id="weather-icon" src="" alt="Weather icon">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </div>
+
+            <div class="card-forecast">
+                <h2>Weather Forecast</h2>
+                <h3 id="forecast-town"></h3>
+            
+                <div id="today">
+                    <p>Today: <span id="forecast-temp-today"></span></p>
+                </div>
+            
+                <div id="next-day">
+                    <p id="day-name-next"></p>
+                    <p><span id="forecast-temp-next"></span></p>
+                </div>
+            
+                <div id="day-after-next">
+                    <p id="day-name-after"></p>
+                    <p><span id="forecast-temp-after"></span></p>
+                </div>
+            </div>
+            
+        </div>
     </div>
 
-    <div class="card-forecast">
-        <h2>Weather Forecast</h2>
-        <h3 id="forecast-town"></h3>
-    
-        <div id="today">
-            <p>Today: <span id="forecast-temp-today"></span></p>
-        </div>
-    
-        <div id="next-day">
-            <p id="day-name-next"></p>
-            <p><span id="forecast-temp-next"></span></p>
-        </div>
-    
-        <div id="day-after-next">
-            <p id="day-name-after"></p>
-            <p><span id="forecast-temp-after"></span></p>
-        </div>
-    </div>
-    
-    
-    
-</div>
 
-
-        <!-- DIRECTORY SECTION -->
-        
+        <!-- SPOTLIGHT SECTION -->
         <hr class="header-separator">
-        <div id="directory-container"></div> <!-- Container for displaying member info -->
+        <h2>Member Spotlight</h2>
+        <div id="spotlight-container"></div> <!-- Container for spotlight members -->
 
-    </main>
+</main>
+
+     <!-- FOOTER SECTION -->
 
     <footer class="footer">
         <div class="footer-container">

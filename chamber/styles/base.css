@@ -19,16 +19,16 @@ html, body {
 }
 
 /*----------- HEADER --------------*/
-.header {
+header {
     background: white; /* Light background */
     display: grid;
     align-items: center; /* Center items vertically */
-    padding: .1em 1em; /* Padding around header */
-    box-shadow: 0 0 20px rgba(12, 22, 21, 0.8);
+    box-shadow: 0 0 20px rgba(12, 22, 21, 0.4);
 }
 
 .image-logo img {
     width: 7rem; /* Adjust logo size */
+    margin: .1em 1em;
 }
 
 
@@ -173,51 +173,21 @@ nav a.active-menu-link {
 
 
 
-/*----------- DIRECTORY CARDS --------------*/
 
-#directory-container {
-    width: 100%;
-}
-
-.header-separator {
-    display: none;
-}
-
-.member-card {
-    border: 1px solid var(--accent2-color);
-    border-radius: 8px;
-    padding: 2rem;
-    margin: 1rem;
-    background-color: white;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.member-card img {
-    display: block;
-    margin-bottom: 1rem;
-    width: 90px;
-}
-
-.member-card h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.member-card p {
-    margin: .8rem 0;
-}
 
 /*----------- WEATHER CARD --------------*/
+
+h1 {
+    margin: 1em .8em;
+    color: rgb(23, 53, 53);
+    font-size: 1.8rem;
+}
 
 .weather-container {
     width: 100%;
 }
 
-.weather-container h1 {
-    margin: 1em .5em;
-    color: rgb(23, 53, 53);
-    font-size: 1.8rem;
-}
+
 
 .card-events {
     border: 1px solid rgb(12, 22, 21);
@@ -310,6 +280,8 @@ nav a.active-menu-link {
     font-size: 1.6rem;
 }
 
+
+
 .card-forecast h3 {
     color: rgb(23, 53, 53);
     margin: 1rem 0 0 0;
@@ -328,6 +300,79 @@ nav a.active-menu-link {
     margin: .3rem 0;
 }
 
+/*----------- DIRECTORY CARDS --------------*/
+
+#directory-container {
+    width: 100%;
+}
+
+.header-separator {
+    display: none;
+}
+
+.member-card {
+    border: 1px solid var(--accent2-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+    display: block;
+    margin-bottom: 1rem;
+    width: 90px;
+}
+
+.member-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.member-card p {
+    margin: .8rem 0;
+}
+
+
+/*----------- SPOTLIGHT SECTION (MOBILE) --------------*/
+
+#spotlight-container {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.spotlight-card {
+    border: 1px solid var(--accent2-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.spotlight-card img {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 80px;
+}
+
+.spotlight-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+}
+
+/* Hide the hr for cleaner layout on mobile */
+.header-separator {
+    display: none;
+}
 
 
 
