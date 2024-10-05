@@ -33,7 +33,7 @@ async function fetchMembers() {
 
             memberCard.innerHTML = `
                 <h2>${member.name}</h2>
-                <img src="images/${member.image}" alt="${member.name} logo" width="100">
+                <img src="images/${member.image}" alt="${member.name} logo" width="100" loading="lazy">
                 <p><strong>Address:</strong> ${member.address}</p>
                 <p><strong>Phone:</strong> ${member.phone_number}</p>
                 <p><strong>Website:</strong> <a href="${member.website_url}" target="_blank">${member.website_url}</a></p>
