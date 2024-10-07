@@ -21,14 +21,14 @@ html, body {
 /*----------- HEADER --------------*/
 
 header {
-    background: white; /* Light background */
+    background: white;
     display: grid;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     box-shadow: 0 0 20px rgba(12, 22, 21, 0.4);
     position: fixed;  /* Fix header position */
     top: 0;
     left: 0;
-    width: 100%; /* Ensure it covers the full width */
+    width: 100%;
     z-index: 1000; /* Make sure it stays above content */
     padding: 0;
 }
@@ -407,6 +407,7 @@ h1 {
 
 
 /*----------- FOOTER --------------*/
+
 .footer {
     background: linear-gradient(to top, rgb(12, 22, 21), rgb(23, 53, 53));
     color: white;
@@ -418,7 +419,6 @@ h1 {
 }
 
 .footer-container {
-    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -514,6 +514,7 @@ h1 {
 }
 
 .highlight {
+    margin: 0 auto;
     font-weight: 600;
     font-size: .8rem;
     color: #989898;
