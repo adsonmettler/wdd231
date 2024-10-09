@@ -31,16 +31,14 @@
     /*----------- NAVIGATION --------------*/
 nav {
     background-color: white;
-    font-size: 0.9rem; /* Font size for navigation */
+    font-size: 1rem; /* Font size for navigation */
 }
 
 nav ul {
     display: flex; /* Horizontal layout for nav items */
 }
 
-nav a:hover {
-    color: rgb(100, 200, 140); /* Change text color on hover */
-}
+
 
 nav a.active-menu-link {
     text-decoration: underline; /* Underline for active link */
@@ -56,14 +54,14 @@ nav a.active-menu-link {
     display: flex; /* Align items in a row */
     justify-content: center; /* Center the items */
     text-decoration: none; /* Remove underline */
-    font-weight: 500;
+    font-weight: 700;
     color: rgb(23, 53, 53);
     transition: background-color 0.3s, color 0.3s;
   }
   
   /* Hover Effects */
   .navigation-links a:hover {
-    color: rgb(100, 200, 140);
+    color: rgb(41, 100, 65);
   }
   
 
@@ -113,16 +111,17 @@ p {
 .hero-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #27ae60;
+    background-color: rgb(23, 53, 53);
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     transition: background-color 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: #2ecc71;
+    background-color: rgb(83, 167, 117);
 }
 
 .hero-image {
