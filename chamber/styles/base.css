@@ -42,6 +42,7 @@ header {
 
 
 /*----------- NAVIGATION --------------*/
+
 nav {
     background-color: rgb(23, 53, 53); /* Dark background for nav */
     font-size: 1rem; /* Font size for navigation */
@@ -181,8 +182,6 @@ nav a.active-menu-link {
 
 
 
-
-
 /*----------- WEATHER CARD --------------*/
 
 .main-container {
@@ -270,9 +269,8 @@ h1 {
 }
 
 
+
 /*----------- FORECAST CARD --------------*/
-
-
 
 
 .card-forecast {
@@ -403,6 +401,99 @@ h1 {
 .header-separator {
     display: none;
 }
+
+
+
+/*----------- FORM --------------*/
+
+
+.form-container {
+    max-width: 500px;
+    margin: 2em 2em;
+    border: 1px solid var(--primary-color);
+    color: rgb(100, 200, 140);
+    padding: 2em 4em;
+    border-radius: 45px;
+    box-shadow: 4px 4px 8px rgb(23, 53, 53, 0.3);
+}
+
+
+
+.designOne {
+    margin: 2em auto;
+}
+  
+  form {
+      margin: 1rem 50%;
+    
+      label {
+        display: block;
+        font-size: .8rem;
+        color: rgb(23, 53, 53);
+        padding-top: .2rem;
+      }
+
+      h3 {
+        font-size: .9rem;
+        color: rgb(23, 53, 53);
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #eee;
+      }
+    
+      input[type=text],
+      input[type=tel],
+      input[type=date],
+      input[type=email],
+      select {
+        display: block;
+        margin: .1rem 0 1rem 0 ;
+        padding: .3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color:#555;
+        font-size: 1rem;
+        color: #3D405B;
+        width: 250px;
+      }
+    
+      input:required {border-left-color: #ec6060;}
+      input:focus {border-left-color: rgb(23, 53, 53); outline:none;}
+      input:required:valid{border-left-color: rgb(100, 200, 140);}
+    
+      input[type=submit] {
+        border: none;
+        text-align: center;
+        background-color: rgb(100, 200, 140);
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+      input[type=submit]:hover {
+        background-color: rgb(23, 53, 53);
+        cursor: pointer;
+      }
+
+
+    }
+    input:-webkit-autofill{
+      -webkit-text-fill-color: #999;
+    }
+    
+    #results {
+      background-color: #F4F1DE;
+      padding: 0 1rem;
+      border: 1px solid #E07A5F;
+      border-radius: 6px;
+    }
+
+
+
 
 
 
