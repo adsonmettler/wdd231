@@ -516,7 +516,7 @@ h1 {
 
 .membership-card {
     border: 1px solid rgb(23, 53, 53);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 1em;
     background-color: rgba(100, 200, 140, 0.2);
     text-align: center;
