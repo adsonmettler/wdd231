@@ -332,11 +332,16 @@ h1 {
 
 .member-card {
     border: 1px solid var(--accent2-color);
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 2rem;
     margin: 1rem;
     background-color: white;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .member-card img {
@@ -373,12 +378,18 @@ h1 {
 
 .spotlight-card {
     border: 1px solid var(--accent2-color);
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 1.5rem;
     margin: 1rem 0;
     background-color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .spotlight-card img {

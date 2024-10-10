@@ -290,7 +290,6 @@ h1 {
     color: rgb(100, 200, 140);
     padding: .8rem 3rem;
     cursor: pointer;
-    border-radius: 45px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -327,7 +326,7 @@ h1 {
 
 .spotlight-card {
     border: 1px solid var(--accent2-color);
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 2rem;
     margin: 1rem 0;
     background-color: white;
