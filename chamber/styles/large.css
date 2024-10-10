@@ -382,7 +382,7 @@ h1 {
     flex-direction: column;
     align-items: left;
     max-width: 500px;
-    margin: 2em auto;
+    margin: 2em auto 2em 30%;
     border: 1px solid var(--primary-color);
     color: rgb(100, 200, 140);
     padding: 2em 4em;
@@ -402,7 +402,7 @@ h1 {
 }
   
   form {
-      margin: 1rem 50%;
+      margin: 1rem auto;
     
       label {
         display: block;
@@ -503,6 +503,7 @@ h1 {
     flex-wrap: wrap;
     gap: 1em; /* Adjust as needed */
     max-width: 80%;
+    margin: 2em 30% 2em auto;
 }
 
 .membership-container {
