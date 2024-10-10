@@ -102,7 +102,7 @@ nav a.active-menu-link {
     font-weight: 600;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 999px) {
     nav ul {
         display: none; /* Hide nav items on mobile */
     }
@@ -119,7 +119,7 @@ nav a.active-menu-link {
     }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 999px) {
     #menubutton {
         display: none; /* Hide hamburger button on larger screens */
     }
@@ -408,8 +408,8 @@ h1 {
 
 
 .form-container {
-    max-width: 500px;
-    margin: 2em 2em;
+    max-width: 80%;
+    margin: 2em auto;
     border: 1px solid var(--primary-color);
     color: rgb(100, 200, 140);
     padding: 2em 4em;
