@@ -443,8 +443,8 @@ h1 {
       input[type=submit] {
         border: none;
         text-align: center;
-        background-color: rgb(23, 53, 53);
-        color: white;
+        background-color: rgb(100, 200, 140);
+        color: rgb(23, 53, 53);
         padding: .75rem 1.5rem;
         margin: 2rem 0;
         font-size: 1.2rem;
