@@ -444,6 +444,7 @@ h1 {
       input[type=tel],
       input[type=date],
       input[type=email],
+      textarea[type=text],
       select {
         display: block;
         margin: .1rem 0 1rem 0 ;
@@ -454,7 +455,7 @@ h1 {
         border-left-color:#555;
         font-size: 1rem;
         color: #3D405B;
-        width: 250px;
+        width: 100%;
       }
     
       input:required {border-left-color: #ec6060;}

@@ -418,6 +418,7 @@ h1 {
       input[type=tel],
       input[type=date],
       input[type=email],
+      textarea[type=text],
       select {
         display: block;
         margin: .1rem 0 1rem 0 ;
