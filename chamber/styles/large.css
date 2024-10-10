@@ -387,9 +387,14 @@ h1 {
     color: rgb(100, 200, 140);
     padding: 2em 4em;
     border-radius: 45px;
-    box-shadow: 4px 4px 8px rgb(23, 53, 53, 0.3);
+    box-shadow: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
 
 
 .designOne {
@@ -514,7 +519,6 @@ h1 {
     padding: 1em;
     background-color: rgba(100, 200, 140, 0.2);
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
 }
 

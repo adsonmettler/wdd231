@@ -504,7 +504,7 @@ h1 {
     }
     
     .membership-card {
-        background-color: rgb(100, 200, 140);
+        background-color: rgba(100, 200, 140, 0.2);
         border: 1px solid var(--secondary-color);
         border-radius: 20px;
         padding: 15px;
@@ -514,7 +514,7 @@ h1 {
     
     .membership-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
     
     .membership-card p {
