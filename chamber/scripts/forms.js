@@ -29,10 +29,15 @@ function capitalize(string) {
 
 const showInfo = document.querySelector('#results')
 showInfo.innerHTML = `
-<p>Apporiment for ${capitalize(show("first"))} ${capitalize(show("last"))}</p>
-<p>Proxy ${show("ordinance")} on ${show("fecha")} in the ${show("location")} Temple. </p>
-<p>Your Phone: ${show("phone")}</p>
-<p>Your Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
+<h3>Application for ${capitalize(show("first"))} ${capitalize(show("last"))}</h3>
+<p><strong>Your title:</strong> ${capitalize(show("title"))}</p>
+<p><strong>Your Email:</strong> <a href="mailto:${show("email")}">${show("email")}</a></p>
+<p><strong>Your Phone:</strong> ${show("phone")}</p>
+<p><strong>Your Organization:</strong> ${show("organization")}</p>
+<p><strong>Your Business Description:</strong> ${show("description")}</p>
+<p><strong>Your Membership Level:</strong> ${show("membership")}</p>
+<p><strong>Date and Time of Application:</strong> ${show("timestamp")}</p>
+
 
 `
 

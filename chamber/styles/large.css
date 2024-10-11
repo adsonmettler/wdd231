@@ -465,16 +465,26 @@ h1 {
     
     #results {
       background-color: #F4F1DE;
-      padding: 0 1rem;
+      padding: 2em 4em;
       border: 1px solid rgb(23, 53, 53);
       border-radius: 6px;
+      width: 800px;
+      margin: 0 auto 2em auto;
     }
 
     .application-title {
         text-align: center;
         font-size: 1.6rem;
-        margin: 2em 0;
+        margin: 2em auto 1em auto;
         color: rgb(23, 53, 53);
+    }
+
+    #results h3 {
+        margin-bottom: 1em;
+    }
+
+    #results p {
+        margin: .5em;
     }
 
 /* JOIN layout */
