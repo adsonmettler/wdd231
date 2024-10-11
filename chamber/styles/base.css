@@ -501,8 +501,30 @@ h1 {
     #results {
       background-color: #F4F1DE;
       padding: 0 1rem;
-      border: 1px solid #E07A5F;
+      border: 1px solid rgb(23, 53, 53);
       border-radius: 6px;
+      width: 80%;
+      margin: 2em auto;
+    }
+
+    .application-title {
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 2em auto 1em auto;
+        color: rgb(23, 53, 53);
+    }
+
+    .application-submitted {
+        width: 80%;
+        margin: 4em auto 0 auto;
+    }
+
+    #results h3 {
+        margin: 1em;
+    }
+
+    #results p {
+        margin: 0 1em .5em 1em;
     }
 
 /* Membership level cards */
@@ -567,7 +589,15 @@ h1 {
     }
 
     
+/* JOIN LAYOUT */
 
+
+.join-layout h2 {
+    text-align: center;
+    margin-bottom: 0;
+    color: rgb(71, 142, 100);
+    font-size: 1.6rem;
+}
 
 
 
