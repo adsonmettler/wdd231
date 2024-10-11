@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".membership-card");
 
