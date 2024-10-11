@@ -450,7 +450,6 @@ h1 {
         font-size: .9rem;
         color: rgb(23, 53, 53);
         margin: 1.5rem 0 .2rem 0;
-        border-bottom: 1px solid #eee;
       }
     
       input[type=text],
