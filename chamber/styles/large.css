@@ -466,8 +466,15 @@ h1 {
     #results {
       background-color: #F4F1DE;
       padding: 0 1rem;
-      border: 1px solid #E07A5F;
+      border: 1px solid rgb(23, 53, 53);
       border-radius: 6px;
+    }
+
+    .application-title {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 2em 0;
+        color: rgb(23, 53, 53);
     }
 
 /* JOIN layout */
