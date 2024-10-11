@@ -1,3 +1,4 @@
+
 // Function to shuffle an array (Fisher-Yates shuffle)
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
