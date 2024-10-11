@@ -533,10 +533,16 @@ h1 {
 .membership-card {
     border: 1px solid rgb(23, 53, 53);
     border-radius: 20px;
-    padding: 1em;
+    padding: .5em;
     background-color: rgba(100, 200, 140, 0.2);
     text-align: center;
     width: 80%;
+}
+
+.membership-card p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin: .4em 0;
 }
 
 /* Modal Styles */
