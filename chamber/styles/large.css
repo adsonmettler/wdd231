@@ -542,8 +542,23 @@ h1 {
 .membership-card p {
     font-size: 1.2rem;
     color: var(--secondary-color);
-    margin: .4em 0;
+    margin: .5em 0;
 }
+
+
+/* Membership card animation */
+.membership-card {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start below the viewport */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.membership-card.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to the original position */
+}
+
+
 
 /* Modal Styles */
 .modal {
