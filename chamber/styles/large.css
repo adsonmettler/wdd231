@@ -479,13 +479,7 @@ h1 {
         color: rgb(23, 53, 53);
     }
 
-    #results h3 {
-        margin-bottom: 1em;
-    }
-
-    #results p {
-        margin: .5em;
-    }
+    
 
 /* JOIN layout */
 
@@ -539,6 +533,8 @@ h1 {
     width: 80%;
 }
 
+
+
 .membership-card p {
     font-size: 1.2rem;
     color: var(--secondary-color);
@@ -551,6 +547,7 @@ h1 {
     opacity: 0; /* Initially hidden */
     transform: translateY(50px); /* Start below the viewport */
     transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .membership-card.in-view {
@@ -558,7 +555,10 @@ h1 {
     transform: translateY(0); /* Move to the original position */
 }
 
-
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 
 /* Modal Styles */
 .modal {

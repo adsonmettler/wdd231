@@ -11,15 +11,14 @@ let formData = everything[1].split('&')
 
 
 function show(cup) {
-
     formData.forEach((element) => {
-
         if (element.startsWith(cup)) {
-            result=element.split('=')[1].replace("%40","@")
+            result = decodeURIComponent(element.split('=')[1].replace("%40", "@"));
         } // end if
-    })
-    return(result)
+    });
+    return(result);
 } // end show
+
 
 
 function capitalize(string) {
@@ -28,6 +27,12 @@ function capitalize(string) {
 
 
 const showInfo = document.querySelector('#results')
+
+
+const timestamp = show("timestamp");
+const date = new Date(timestamp).toLocaleDateString();  // Extract the date
+const time = new Date(timestamp).toLocaleTimeString();  // Extract the time
+
 showInfo.innerHTML = `
 <h3>Application for ${capitalize(show("first"))} ${capitalize(show("last"))}</h3>
 <p><strong>Your title:</strong> ${capitalize(show("title"))}</p>
@@ -36,9 +41,9 @@ showInfo.innerHTML = `
 <p><strong>Your Organization:</strong> ${show("organization")}</p>
 <p><strong>Your Business Description:</strong> ${show("description")}</p>
 <p><strong>Your Membership Level:</strong> ${show("membership")}</p>
-<p><strong>Date and Time of Application:</strong> ${show("timestamp")}</p>
+<p><strong>Date and Time of Application:</strong> ${date} ${time}</p>
+`;
 
 
-`
 
 
