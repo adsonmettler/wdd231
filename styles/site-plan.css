@@ -14,13 +14,34 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
+    color: var(--accent2-color);
+}
+
+strong {
     color: var(--primary-color);
 }
+
 header {
     padding: 25px;
     background-color: var(--accent1-color);
     border-radius: 40px;
+    border-image: linear-gradient(to right, rgb(0, 90, 240), rgb(155, 192, 254)) 1;
 }
+
+button {
+    padding: 1em 4em;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 2px 2px 8px rgb(23, 23, 23, .4);
+}
+
+button:hover {
+    background-color: rgb(18, 104, 254);
+}
+
 p {
     padding: 25px;
 }
@@ -53,6 +74,8 @@ body {
 }
 h1 {
     font-weight: 900;
+    font-size: 6rem;
+    line-height: 6rem;
 }
 h2 {
     font-weight: 800;
