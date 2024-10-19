@@ -739,3 +739,88 @@ footer p {
 }
 
 
+/*----------- DISCOVERY PAGE --------------*/
+
+.discovery-container {
+    background-color: #f0f4f8;
+    padding: 2em 0;
+}
+
+
+h1 {
+    margin: 1em .8em;
+    color: rgb(23, 53, 53);
+    font-size: 1.8rem;
+}
+
+.weather-container {
+    width: 100%;
+}
+
+
+.card-events {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgb(100, 200, 140, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2em 1em;
+}
+
+.card-events h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.card-events h3 {
+    color: rgb(23, 53, 53);
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+}
+
+.card-events p {
+    color: rgb(23, 53, 53);
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+}
+
+
+.card-weather {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgb(100, 200, 140, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    margin: 2em 1em;
+}
+
+.card-weather h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.card-weather h3 {
+    color: rgb(23, 53, 53);
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+}
+
+.card-weather #description {
+    text-transform: capitalize;
+    color: rgb(23, 53, 53);
+    margin: .3rem 0;
+}
+
+.card-weather #temperature {
+    font-size: 2rem;
+    color: rgb(23, 53, 53);
+    margin: .3rem 0;
+}

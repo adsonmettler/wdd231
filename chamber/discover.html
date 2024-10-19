@@ -27,6 +27,7 @@
     <script defer src="scripts/directory.js"></script>
     <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/photos.js"></script>
 </head>
 <body>
     <header>
@@ -55,20 +56,20 @@
     <main>
 
 
-        <!-- EVENTS AND WEATHER SECTION -->
-    <div class="main-container">
+        <!-- DISCOVERY SECTION -->
+    <div class="discovery-container">
         
-        <div class="weather-container">
+        <div class="discovery-cards-container">
 
-            <div class="card-events">
+            <div class="discovery-events">
                 <h2>Events</h2>
                 <h3 id="event-title">Upcoming Event Title</h3>
                 <p id="event-description">Upcoming a list soon</p>
                 <p id="event-date">Date: TBD</p>
             </div>
 
-            <div class="card-weather">
-                <h2>Current Weather</h2>
+            <div class="discovery-webinars">
+                <h2>Next Webinar</h2>
                 <h3 id="town">Toronto</h3>
                 <img id="weather-icon" src="images/canada-toronto.jpeg" alt="Weather icon" width="100" loading="lazy">
                 <p id="description"></p>
@@ -76,8 +77,8 @@
             </div>
 
 
-            <div class="card-forecast">
-                <h2>Weather Forecast</h2>
+            <div class="discovery-statistics">
+                <h2>Market Statistics</h2>
                 <h3 id="forecast-town">Toronto</h3>
             
                 <div id="today">
@@ -92,16 +93,17 @@
                     <p id="day-name-after"><span></span> <span id="forecast-temp-after"></span></p>
                 </div>
             </div>
-            
-            
+    
         </div>
+
+            <!-- DISCOVERY PHOTO SECTION -->
+        <div class="photos-div">
+            <h2>Discovery</h2>
+            <div id="photos-container"></div> <!-- Container for spotlight members -->
+        </div>
+
     </div>
 
-    <!-- SPOTLIGHT SECTION -->
-    <div class="spotlight-div">
-        <h2>Member Spotlight</h2>
-        <div id="spotlight-container"></div> <!-- Container for spotlight members -->
-    </div>
 
 
     </main>

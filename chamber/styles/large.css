@@ -577,4 +577,151 @@ h1 {
 }
 
 
+
+/*----------- DISCOVERY PAGE --------------*/
+
+
+.discovery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f0f4f8;
+    padding: 2em 0;
+}
+
+h1 {
+    margin: 1em 0; /* Remove auto centering */
+    padding-left: 0; /* Ensure no extra padding */
+    color: rgb(23, 53, 53);
+    font-size: 1.8rem;
+    text-align: left; /* Align text to the left */
+}
+
+.discovery-cards-container {
+    width: 80%;
+    margin: 10em auto 4em auto;
+}
+
+
+.discovery-events {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgba(100, 200, 140, 0.4); /* Fix rgba color format */
+    border-radius: 10px;
+    text-align: left;
+    width: 25%;
+    height: 300px;
+    margin: 2em 0; /* Center margin adjustments */
+}
+
+.discovery-events h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em .6em;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.discovery-events h3,
+.discovery-events p {
+    margin: 1em;
+}
+
+.discovery-webinars {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgba(100, 200, 140, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    width: 25%; /* Adjusted for consistent layout */
+    height: 300px;
+    margin: 2em 0; /* Same margin as other cards */
+}
+
+.discovery-webinars h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.discovery-webinars h3,
+.discovery-webinars #description,
+.discovery-webinars #temperature {
+    margin: auto 0;
+}
+
+.discovery-statistics {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgba(100, 200, 140, 0.4);
+    border-radius: 10px;
+    text-align: left;
+    width: 25%; /* Adjusted for consistent layout */
+    height: 300px;
+    margin: 2em 0; /* Same margin as other cards */
+}
+
+.discovery-statistics h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em .6em;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.discovery-statistics h3,
+.discovery-statistics p {
+    margin: 1em;
+    text-transform: capitalize;
+    color: rgb(23, 53, 53);
+}
+
+
+/*----------- SPOTLIGHT SECTION (LARGE SCREENS) --------------*/
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.spotlight-card {
+    border: 1px solid var(--accent2-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.spotlight-card img {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100px;
+}
+
+.spotlight-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card p {
+    margin: 0.8rem 0;
+    font-size: 1rem;
+}
+
+
+
+
+
 }

@@ -1,0 +1,40 @@
+{
+    "photos": [
+      {
+        "name": "Saint Andrew Station",
+        "image": "photo-saint-andrew-station.png",
+        "caption": "A view of Saint Andrew subway station in downtown Toronto."
+      },
+      {
+        "name": "Seneca College",
+        "image": "photo-seneca-college.png",
+        "caption": "The main campus of Seneca College in Toronto."
+      },
+      {
+        "name": "Tim Hortons",
+        "image": "photo-tim-hortons.png",
+        "caption": "A popular Tim Hortons café in Canada."
+      },
+      {
+        "name": "Chamber Meetup",
+        "image": "photo-chamber-meetup.png",
+        "caption": "Business professionals networking at a chamber meetup."
+      },
+      {
+        "name": "Toronto Architectural Glass Inc.",
+        "image": "photo-toronto-architectural-glass-inc.png",
+        "caption": "Innovative glasswork by Toronto Architectural Glass Inc."
+      },
+      {
+        "name": "Toronto Metropolitan University",
+        "image": "photo-toronto-metropolitan-university.png",
+        "caption": "The urban campus of Toronto Metropolitan University."
+      },
+      {
+        "name": "CN Tower",
+        "image": "photo-cn-tower.png",
+        "caption": "The iconic CN Tower in Toronto."
+      }
+    ]
+  }
+  
