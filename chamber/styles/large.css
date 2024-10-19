@@ -550,7 +550,7 @@ h1 {
 }
 
 .membership-card.in-view {
-    opacity: 1; /* Fully visible */
+    opacity: 1;
     transform: translateY(0); /* Move to the original position */
 }
 
@@ -598,7 +598,7 @@ h1 {
     padding-left: 0; /* Ensure no extra padding */
     color: rgb(23, 53, 53);
     font-size: 1.8rem;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .discovery-cards-container {
@@ -606,6 +606,10 @@ h1 {
     margin: 10em auto 2em 50%;
 }
 
+.discovery-cards-container h1 {
+    width: 50%;
+    margin: 0 auto;
+}
 
 .discovery-events {
     border: 1px solid rgb(12, 22, 21);
@@ -614,7 +618,7 @@ h1 {
     text-align: left;
     width: 50%;
     height: 200px;
-    margin: 2em 0;
+    margin: 2em auto;
 }
 
 .discovery-events h2 {
@@ -645,7 +649,7 @@ h1 {
     text-align: left;
     width: 50%;
     height: auto;
-    margin: 2em 0;
+    margin: 2em auto;
     padding-bottom: 2em;
 }
 
@@ -677,7 +681,7 @@ h1 {
     text-align: left;
     width: 50%;
     height: auto;
-    margin: 2em 0;
+    margin: 2em auto;
     padding-bottom: 2em;
 }
 
@@ -707,26 +711,39 @@ h1 {
 
 /* Photos Section */
 .photos-div {
-    padding: 4em;
     margin: 8em auto 2em auto;
 }
 
 #photos-container {
     display: grid;
     width: 600px;
+    gap: 4em;
     
+}
+
+/* Photo card animation */
+.photo-card {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start below the viewport */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.photo-card.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
 }
 
 #photos-container img {
     width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease;
-    margin: 2em auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    margin: 0 auto;
 }
 
 #photos-container img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05); /* Slightly zoom the image on hover */
 }
 
@@ -737,6 +754,7 @@ h1 {
 }
 
 #photos-container p {
+    font-size: 1.2rem;
     color: rgb(23, 53, 53);
 }
 
