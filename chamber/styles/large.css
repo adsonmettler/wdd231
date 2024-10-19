@@ -588,7 +588,10 @@ h1 {
     margin: 0 auto;
     background-color: #f0f4f8;
     padding: 2em 0;
+    
 }
+
+
 
 h1 {
     margin: 1em 0; /* Remove auto centering */
@@ -609,9 +612,9 @@ h1 {
     background-color: rgba(100, 200, 140, 0.4); /* Fix rgba color format */
     border-radius: 10px;
     text-align: left;
-    width: 25%;
-    height: 300px;
-    margin: 2em 0; /* Center margin adjustments */
+    width: 50%;
+    height: 200px;
+    margin: 2em 0;
 }
 
 .discovery-events h2 {
@@ -624,19 +627,26 @@ h1 {
     font-size: 1.4rem;
 }
 
-.discovery-events h3,
-.discovery-events p {
+.discovery-events h3 {
     margin: 1em;
+    font-size: 1.2rem;
+    color: rgb(23, 53, 53);
+}
+
+.discovery-events p {
+    margin: .5em 1.4em;
+    color: rgb(23, 53, 53);
 }
 
 .discovery-webinars {
     border: 1px solid rgb(12, 22, 21);
     background-color: rgba(100, 200, 140, 0.4);
     border-radius: 10px;
-    text-align: center;
-    width: 25%; /* Adjusted for consistent layout */
-    height: 300px;
-    margin: 2em 0; /* Same margin as other cards */
+    text-align: left;
+    width: 50%;
+    height: auto;
+    margin: 2em 0;
+    padding-bottom: 2em;
 }
 
 .discovery-webinars h2 {
@@ -649,10 +659,15 @@ h1 {
     font-size: 1.4rem;
 }
 
-.discovery-webinars h3,
-.discovery-webinars #description,
-.discovery-webinars #temperature {
-    margin: auto 0;
+.discovery-webinars h3 {
+    margin: 1em;
+    font-size: 1.2rem;
+    color: rgb(23, 53, 53);
+}
+
+.discovery-webinars p {
+    margin: .5em 1.4em;
+    color: rgb(23, 53, 53);
 }
 
 .discovery-statistics {
@@ -660,9 +675,10 @@ h1 {
     background-color: rgba(100, 200, 140, 0.4);
     border-radius: 10px;
     text-align: left;
-    width: 25%; /* Adjusted for consistent layout */
-    height: 300px;
-    margin: 2em 0; /* Same margin as other cards */
+    width: 50%;
+    height: auto;
+    margin: 2em 0;
+    padding-bottom: 2em;
 }
 
 .discovery-statistics h2 {
@@ -675,50 +691,45 @@ h1 {
     font-size: 1.4rem;
 }
 
-.discovery-statistics h3,
-.discovery-statistics p {
+.discovery-statistics h3 {
     margin: 1em;
-    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: rgb(23, 53, 53);
+}
+
+.discovery-statistics p {
+    margin: .5em 1.4em;
     color: rgb(23, 53, 53);
 }
 
 
-/*----------- SPOTLIGHT SECTION (LARGE SCREENS) --------------*/
+/*----------- PHOTOS DISCOVERY SECTION (LARGE SCREENS) --------------*/
 
-#spotlight-container {
+/* Photos Section */
+.photos-div {
+    padding: 4em;
+    margin-top: 4em auto;
+}
+
+#photos-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    
+    gap: 1rem;
+    margin-top: 2em;
 }
 
-.spotlight-card {
-    border: 1px solid var(--accent2-color);
-    border-radius: 20px;
-    padding: 2rem;
-    margin: 1rem 0;
-    background-color: white;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
+#photos-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.spotlight-card img {
-    display: block;
-    margin-bottom: 1rem;
-    width: 100px;
+#photos-container img:hover {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
 }
 
-.spotlight-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-}
-
-.spotlight-card p {
-    margin: 0.8rem 0;
-    font-size: 1rem;
-}
 
 
 
