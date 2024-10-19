@@ -765,6 +765,11 @@ h1 {
     margin: 10em auto 4em auto;
 }
 
+.discovery-cards-container h1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 .discovery-events {
     border: 1px solid rgb(12, 22, 21);
@@ -866,7 +871,7 @@ h1 {
 
 /* Photos Section */
 .photos-div {
-    padding: 4em;
+    padding: 2em;
     margin: 4em auto;
 }
 
