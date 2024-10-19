@@ -602,12 +602,12 @@ h1 {
 }
 
 .discovery-cards-container {
-    width: 100%;
+    width: 80%;
     margin: 10em auto 2em 50%;
 }
 
 .discovery-cards-container h1 {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -616,7 +616,7 @@ h1 {
     background-color: rgba(100, 200, 140, 0.4); /* Fix rgba color format */
     border-radius: 10px;
     text-align: left;
-    width: 50%;
+    width: 80%;
     height: 200px;
     margin: 2em auto;
 }
@@ -647,7 +647,7 @@ h1 {
     background-color: rgba(100, 200, 140, 0.4);
     border-radius: 10px;
     text-align: left;
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: 2em auto;
     padding-bottom: 2em;
@@ -679,7 +679,7 @@ h1 {
     background-color: rgba(100, 200, 140, 0.4);
     border-radius: 10px;
     text-align: left;
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: 2em auto;
     padding-bottom: 2em;
