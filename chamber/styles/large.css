@@ -583,7 +583,7 @@ h1 {
 
 .discovery-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
     margin: 0 auto;
     background-color: #f0f4f8;
@@ -602,8 +602,8 @@ h1 {
 }
 
 .discovery-cards-container {
-    width: 80%;
-    margin: 10em auto 4em auto;
+    width: 100%;
+    margin: 10em auto 2em 50%;
 }
 
 
@@ -708,22 +708,22 @@ h1 {
 /* Photos Section */
 .photos-div {
     padding: 4em;
-    margin-top: 4em auto;
+    margin: 8em auto 2em auto;
 }
 
 #photos-container {
     display: grid;
+    width: 600px;
     
-    gap: 1rem;
-    margin-top: 2em;
 }
 
 #photos-container img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
+    margin: 2em auto;
 }
 
 #photos-container img:hover {
@@ -731,8 +731,14 @@ h1 {
 }
 
 
+#photos-container h3 {
+    font-size: 2rem;
+    color: rgb(23, 53, 53);
+}
 
-
+#photos-container p {
+    color: rgb(23, 53, 53);
+}
 
 
 }

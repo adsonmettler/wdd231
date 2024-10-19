@@ -741,86 +741,150 @@ footer p {
 
 /*----------- DISCOVERY PAGE --------------*/
 
+
 .discovery-container {
+    width: 100%;
+    margin: 0 auto;
     background-color: #f0f4f8;
     padding: 2em 0;
+    
 }
+
 
 
 h1 {
-    margin: 1em .8em;
+    margin: 1em 0; /* Remove auto centering */
+    padding-left: 0; /* Ensure no extra padding */
     color: rgb(23, 53, 53);
     font-size: 1.8rem;
+    text-align: left; /* Align text to the left */
 }
 
-.weather-container {
+.discovery-cards-container {
     width: 100%;
+    margin: 10em auto 4em auto;
 }
 
 
-.card-events {
+.discovery-events {
     border: 1px solid rgb(12, 22, 21);
-    background-color: rgb(100, 200, 140, 0.4);
+    background-color: rgba(100, 200, 140, 0.4); /* Fix rgba color format */
     border-radius: 10px;
-    text-align: center;
-    margin: 2em 1em;
+    text-align: left;
+    width: 80%;
+    height: 200px;
+    margin: 2em auto;
 }
 
-.card-events h2 {
+.discovery-events h2 {
+    background-color: rgb(23, 53, 53);
+    color: #ffff;
+    border-radius: 10px 10px 0 0;
+    padding: .4em .6em;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.discovery-events h3 {
+    margin: 1em;
+    font-size: 1.2rem;
+    color: rgb(23, 53, 53);
+}
+
+.discovery-events p {
+    margin: .5em 1.4em;
+    color: rgb(23, 53, 53);
+}
+
+.discovery-webinars {
+    border: 1px solid rgb(12, 22, 21);
+    background-color: rgba(100, 200, 140, 0.4);
+    border-radius: 10px;
+    text-align: left;
+    width: 80%;
+    height: auto;
+    margin: 2em auto;
+    padding-bottom: 2em;
+}
+
+.discovery-webinars h2 {
     background-color: rgb(23, 53, 53);
     color: #ffff;
     border-radius: 10px 10px 0 0;
     padding: .4em;
-    margin: 0;
+    margin: 0 0 1em 0;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
-.card-events h3 {
+.discovery-webinars h3 {
+    margin: 1em;
+    font-size: 1.2rem;
     color: rgb(23, 53, 53);
-    margin: 1rem 0 0 0;
-    font-size: 1rem;
 }
 
-.card-events p {
+.discovery-webinars p {
+    margin: .5em 1.4em;
     color: rgb(23, 53, 53);
-    margin: 1rem 0 1rem 0;
-    font-size: 1rem;
 }
 
-
-.card-weather {
+.discovery-statistics {
     border: 1px solid rgb(12, 22, 21);
-    background-color: rgb(100, 200, 140, 0.4);
+    background-color: rgba(100, 200, 140, 0.4);
     border-radius: 10px;
-    text-align: center;
-    margin: 2em 1em;
+    text-align: left;
+    width: 80%;
+    height: auto;
+    margin: 2em auto;
+    padding-bottom: 2em;
 }
 
-.card-weather h2 {
+.discovery-statistics h2 {
     background-color: rgb(23, 53, 53);
     color: #ffff;
     border-radius: 10px 10px 0 0;
-    padding: .4em;
+    padding: .4em .6em;
     margin: 0;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
-.card-weather h3 {
+.discovery-statistics h3 {
+    margin: 1em;
+    font-size: 1.2rem;
     color: rgb(23, 53, 53);
-    margin: 1rem 0 0 0;
-    font-size: 1rem;
 }
 
-.card-weather #description {
-    text-transform: capitalize;
+.discovery-statistics p {
+    margin: .5em 1.4em;
     color: rgb(23, 53, 53);
-    margin: .3rem 0;
 }
 
-.card-weather #temperature {
-    font-size: 2rem;
-    color: rgb(23, 53, 53);
-    margin: .3rem 0;
+
+/*----------- PHOTOS DISCOVERY SECTION (LARGE SCREENS) --------------*/
+
+/* Photos Section */
+.photos-div {
+    padding: 4em;
+    margin: 4em auto;
+}
+
+#photos-container {
+    display: grid;
+    
+    gap: 1rem;
+    margin-top: 2em;
+}
+
+#photos-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#photos-container img:hover {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
 }
