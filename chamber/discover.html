@@ -28,6 +28,7 @@
     <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/spotlight.js"></script>
     <script defer src="scripts/photos.js"></script>
+    <script defer src="scripts/discovery.js"></script>
 </head>
 <body>
     <header>
@@ -60,8 +61,16 @@
     
     <div class="discovery-container">
         
+        
+
         <div class="discovery-cards-container">
             <h1>Discovery</h1>
+
+            
+
+            
+            
+
             <div class="discovery-events">
                 <h2>Events</h2>
                 <h3 id="event-title">Upcoming Event Title</h3>
@@ -169,5 +178,13 @@
         
     </footer>
     
+
+    <div id="visit-overlay" class="overlay">
+        <div class="overlay-content">
+            
+            <span class="close-button" id="close-overlay">&times;</span>
+            <p id="visit-message" class="overlay-message"></p>
+        </div>
+    </div>
 </body>
 </html>
