@@ -226,6 +226,8 @@ p {
 
 
 
+
+
 .how-image {
     max-width: 90%;
     height: auto;
@@ -406,14 +408,15 @@ h2 {
     width: 70%;
 }
 
+
 .footer-section {
     margin: 0 40px 0 80px;
 }
 
 .footer-section h4 {
     font-size: .8rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    margin-bottom: 2em;
+    letter-spacing: .1rem;
     font-weight: 500;
 }
 
@@ -423,7 +426,7 @@ h2 {
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     font-size: .8rem;
 }
 
@@ -440,7 +443,7 @@ h2 {
 
 .social-links {
     display: flex;
-    gap: 2em; /* Space between icons */
+    gap: 2em;
     padding: 0;
     list-style: none;
 }
