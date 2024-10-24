@@ -49,3 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Error fetching the testimonials:', error);
         });
 });
+
+
+
+  function toggleAnswer(element) {
+    const faq = element.parentElement;
+    faq.classList.toggle('faq-active');
+  }
+
