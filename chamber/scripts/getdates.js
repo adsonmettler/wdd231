@@ -2,6 +2,18 @@
 // JavaScript function to get the current year
 // Author: Adson Mettler do Nascimento
 
+
+// Menu Navagation | Hamburguer menu button
+
+const hamButton = document.querySelector('#menubutton');
+const navigation = document.querySelector('#animatemenu');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+
 // Function to get the current year
 function getCurrentYear() {
     return new Date().getFullYear();
