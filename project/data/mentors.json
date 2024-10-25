@@ -1,6 +1,6 @@
 [
   {
-      "image": "mentor1.jpg",
+      "image": "images/mentor1.png",
       "name": "John Smith",
       "job_role": "Software Engineer",
       "company": "Google",
@@ -9,7 +9,7 @@
       "location": "Mountain View, CA"
   },
   {
-      "image": "mentor2.jpg",
+      "image": "images/mentor2.png",
       "name": "Alice Johnson",
       "job_role": "Data Scientist",
       "company": "Facebook",
@@ -18,8 +18,8 @@
       "location": "Menlo Park, CA"
   },
   {
-      "image": "mentor3.jpg",
-      "name": "Michael Lee",
+      "image": "images/mentor3.png",
+      "name": "Gwen Lee",
       "job_role": "Product Manager",
       "company": "Amazon",
       "professional_field": "E-commerce",
@@ -27,16 +27,16 @@
       "location": "Seattle, WA"
   },
   {
-      "image": "mentor4.jpg",
+      "image": "images/mentor4.png",
       "name": "Emma Brown",
       "job_role": "UX Designer",
       "company": "Microsoft",
       "professional_field": "Design",
-      "university": "Rhode Island School of Design",
-      "location": "Redmond, WA"
+      "university": "University of Toronto",
+      "location": "Toronto, ON"
   },
   {
-      "image": "mentor5.jpg",
+      "image": "images/mentor5.png",
       "name": "James Wilson",
       "job_role": "Cloud Architect",
       "company": "IBM",
@@ -45,7 +45,7 @@
       "location": "Armonk, NY"
   },
   {
-      "image": "mentor6.jpg",
+      "image": "images/mentor6.png",
       "name": "Linda Martinez",
       "job_role": "Cybersecurity Specialist",
       "company": "Cisco",
@@ -54,7 +54,7 @@
       "location": "San Jose, CA"
   },
   {
-      "image": "mentor7.jpg",
+      "image": "images/mentor7.png",
       "name": "David Anderson",
       "job_role": "Marketing Director",
       "company": "Apple",
@@ -63,7 +63,7 @@
       "location": "Cupertino, CA"
   },
   {
-      "image": "mentor8.jpg",
+      "image": "images/mentor8.png",
       "name": "Susan Clark",
       "job_role": "Financial Analyst",
       "company": "Goldman Sachs",
@@ -72,7 +72,7 @@
       "location": "New York, NY"
   },
   {
-      "image": "mentor9.jpg",
+      "image": "images/mentor9.png",
       "name": "Richard Evans",
       "job_role": "AI Research Scientist",
       "company": "DeepMind",
@@ -81,7 +81,7 @@
       "location": "London, UK"
   },
   {
-      "image": "mentor10.jpg",
+      "image": "images/mentor10.png",
       "name": "Jennifer Lopez",
       "job_role": "Biotech Engineer",
       "company": "Genentech",
@@ -90,7 +90,7 @@
       "location": "San Francisco, CA"
   },
   {
-      "image": "mentor11.jpg",
+      "image": "images/mentor11.png",
       "name": "Matthew Green",
       "job_role": "Civil Engineer",
       "company": "AECOM",
@@ -99,7 +99,7 @@
       "location": "Chicago, IL"
   },
   {
-      "image": "mentor12.jpg",
+      "image": "images/mentor12.png",
       "name": "Olivia Turner",
       "job_role": "Healthcare Consultant",
       "company": "McKinsey & Company",
@@ -108,7 +108,7 @@
       "location": "Boston, MA"
   },
   {
-      "image": "mentor13.jpg",
+      "image": "images/mentor13.png",
       "name": "Chris White",
       "job_role": "Blockchain Developer",
       "company": "Ripple",
@@ -117,8 +117,8 @@
       "location": "San Francisco, CA"
   },
   {
-      "image": "mentor14.jpg",
-      "name": "Patricia Hall",
+      "image": "images/mentor14.png",
+      "name": "Jack Johnson",
       "job_role": "HR Manager",
       "company": "Deloitte",
       "professional_field": "Human Resources",
@@ -126,7 +126,7 @@
       "location": "New York, NY"
   },
   {
-      "image": "mentor15.jpg",
+      "image": "images/mentor15.png",
       "name": "Robert Baker",
       "job_role": "Environmental Scientist",
       "company": "National Geographic",
