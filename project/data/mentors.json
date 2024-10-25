@@ -36,7 +36,7 @@
       "location": "Toronto, ON"
   },
   {
-      "image": "images/mentor5.png",
+      "image": "images/mentor5.webp",
       "name": "James Wilson",
       "job_role": "Cloud Architect",
       "company": "IBM",
@@ -63,7 +63,7 @@
       "location": "Cupertino, CA"
   },
   {
-      "image": "images/mentor8.png",
+      "image": "images/mentor8.webp",
       "name": "Susan Clark",
       "job_role": "Financial Analyst",
       "company": "Goldman Sachs",
@@ -72,7 +72,7 @@
       "location": "New York, NY"
   },
   {
-      "image": "images/mentor9.png",
+      "image": "images/mentor9.webp",
       "name": "Richard Evans",
       "job_role": "AI Research Scientist",
       "company": "DeepMind",
@@ -81,7 +81,7 @@
       "location": "London, UK"
   },
   {
-      "image": "images/mentor10.png",
+      "image": "images/mentor10.webp",
       "name": "Jennifer Lopez",
       "job_role": "Biotech Engineer",
       "company": "Genentech",
@@ -90,7 +90,7 @@
       "location": "San Francisco, CA"
   },
   {
-      "image": "images/mentor11.png",
+      "image": "images/mentor11.webp",
       "name": "Matthew Green",
       "job_role": "Civil Engineer",
       "company": "AECOM",
@@ -99,7 +99,7 @@
       "location": "Chicago, IL"
   },
   {
-      "image": "images/mentor12.png",
+      "image": "images/mentor12.webp",
       "name": "Olivia Turner",
       "job_role": "Healthcare Consultant",
       "company": "McKinsey & Company",
@@ -108,7 +108,7 @@
       "location": "Boston, MA"
   },
   {
-      "image": "images/mentor13.png",
+      "image": "images/mentor13.webp",
       "name": "Chris White",
       "job_role": "Blockchain Developer",
       "company": "Ripple",
@@ -117,7 +117,7 @@
       "location": "San Francisco, CA"
   },
   {
-      "image": "images/mentor14.png",
+      "image": "images/mentor14.webp",
       "name": "Jack Johnson",
       "job_role": "HR Manager",
       "company": "Deloitte",
@@ -126,7 +126,7 @@
       "location": "New York, NY"
   },
   {
-      "image": "images/mentor15.png",
+      "image": "images/mentor15.webp",
       "name": "Robert Baker",
       "job_role": "Environmental Scientist",
       "company": "National Geographic",
