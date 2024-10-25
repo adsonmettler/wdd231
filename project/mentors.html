@@ -59,6 +59,40 @@
         <hr class="header-separator">
         <div id="mentor-cards" class="card-container"></div> <!-- Container for displaying member info -->
 
+        <!-- Modal -->
+        <div id="messageModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Write a Message</h2>
+                <p>Introduce yourself, mention your background, and ask interesting questions related to the mentor's field. This is your chance to get the mentor's attention.</p>
+                
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" placeholder="Your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Your email address" required>
+
+                <label for="messageText">Message:</label>
+                <textarea id="messageText" rows="5" placeholder="Write your message here..." required></textarea>
+                
+                <button id="sendApplication" class="cta-button">Send Application</button>
+            </div>
+        </div>
+
+        <!-- Thank You Modal -->
+        <div id="thankYouModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeThankYouModal">&times;</span>
+                <h2>Thank You!</h2>
+                <p><strong>Your application was submitted successfully!</strong><br><br>
+                    This mentor will evaluate and approve your application.<br>
+                    You will receive a response at the email address you provided.
+                </p>
+                <button id="goBackButton" class="cta-button">Go Back</button>
+            </div>
+        </div>
+
+
 
     </main>
 

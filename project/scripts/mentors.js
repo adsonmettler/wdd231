@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to fetch and display mentors
     async function fetchMentors() {
         try {
-            const response = await fetch('data/mentors.json'); // Make sure the .json file path is correct
+            const response = await fetch('data/mentors.json'); // Ensure the .json file path is correct
             const mentors = await response.json();
 
             const mentorCardsContainer = document.getElementById("mentor-cards");
@@ -23,12 +23,76 @@ document.addEventListener("DOMContentLoaded", () => {
                     <button class="cta-button">Write a Message</button>
                 `;
 
+                // Add click event to the "Write a Message" button
+                const messageButton = card.querySelector(".cta-button");
+                messageButton.addEventListener("click", () => {
+                    openModal();
+                });
+
                 mentorCardsContainer.appendChild(card);
             });
         } catch (error) {
             console.error("Error fetching mentor data:", error);
         }
     }
+
+    // Modal handling
+    const modal = document.getElementById("messageModal");
+    const thankYouModal = document.getElementById("thankYouModal");
+    const closeButton = document.querySelector(".close-button");
+    const closeThankYouButton = document.getElementById("closeThankYouModal");
+    const goBackButton = document.getElementById("goBackButton");
+
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    closeButton.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    closeThankYouButton.addEventListener("click", () => {
+        thankYouModal.style.display = "none";
+    });
+
+    goBackButton.addEventListener("click", () => {
+        thankYouModal.style.display = "none";
+        modal.style.display = "block"; // Optionally reopen the message modal
+    });
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        } else if (event.target == thankYouModal) {
+            thankYouModal.style.display = "none";
+        }
+    };
+
+    // Handle form submission
+    const sendButton = document.getElementById("sendApplication");
+    sendButton.addEventListener("click", () => {
+        const fullName = document.getElementById("fullName").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("messageText").value;
+
+        if (fullName && email && message) {
+            console.log("Full Name:", fullName);
+            console.log("Email:", email);
+            console.log("Message:", message);
+            // Here you would typically send the data to a server
+
+            // Show thank you modal after submission
+            modal.style.display = "none"; // Close the message modal
+            thankYouModal.style.display = "block"; // Show thank you modal
+
+            // Clear input fields (optional)
+            document.getElementById("fullName").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("messageText").value = "";
+        } else {
+            alert("Please fill in all fields.");
+        }
+    });
 
     fetchMentors();
 });
