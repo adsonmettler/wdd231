@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.className = "card";
 
                 card.innerHTML = `
-                    <img src="${mentor.image}" alt="${mentor.name}" class="mentor-image" loading="lazy">
+                    <img src="${mentor.image}" alt="${mentor.name}" class="mentor-image">
                     <h2 class="mentor-name">${mentor.name}</h2>
                     <p class="mentor-role">${mentor.job_role}</p>
                     <p class="mentor-role"><strong>At ${mentor.company}</strong></p>
