@@ -164,7 +164,7 @@ nav a.active-menu-link {
 }
 
 .hero-image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-top: 5em;
 }
@@ -176,7 +176,7 @@ nav a.active-menu-link {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 900;
     margin: 1em 0;
     color: var(--accent2-color);
@@ -218,12 +218,6 @@ p {
     padding: 20px
 }
 
-.how-text {
-    max-width: 90%;
-    margin-bottom: 20px;
-}
-
-
 
 
 
@@ -243,7 +237,7 @@ p {
 }
 
 .how-text {
-    max-width: 100%;
+    max-width: 80%;
     text-align: left;
     margin: 1em;
 }
@@ -259,21 +253,21 @@ p {
 }
 
 h2.how-title {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 800;
     color: var(--accent2-color);
     text-align: center;
 }
 
 
-h3 {
-    font-size: 2.2rem;
+.how-text h3 {
+    font-size: 2rem;
     font-weight: 900;
     margin: 1em 0;
     color: var(--accent2-color);
 }
 
-p {
+.how-text p {
     font-size: .9rem;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -285,7 +279,7 @@ p {
 
 
 .testimonial-container {
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
@@ -305,6 +299,11 @@ p {
     border-radius: 50%;
     margin-right: 20px;
 }
+
+.testimonial-container h1 {
+    font-size: 2rem;
+}
+
 .testimonial h2 {
     margin: 1em 0;
     font-size: 1rem;
@@ -333,6 +332,11 @@ h2 {
     max-width: 800px;
     margin: 4em auto;
     padding: 2em;
+  }
+
+  .faq-question h3 {
+    color: var(--accent2-color);
+    font-size: 1rem;
   }
   
   .faq-container {
