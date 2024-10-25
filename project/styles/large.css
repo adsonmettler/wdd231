@@ -7,6 +7,18 @@
 
 
 @media (min-width: 1000px) {
+
+
+
+    html, body {
+        max-width: 100%;
+        font-family: "Inter", serif;
+        font-style: normal;
+        overflow-x: hidden;
+        background: var(--secondary-color);
+    }
+
+
     .nav-links {
         display: flex;
         align-items: center;
