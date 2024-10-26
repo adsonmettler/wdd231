@@ -386,6 +386,22 @@ h2 {
 /*----------- MENTORS SECTION --------------*/
 
 
+/* Initial state for mentor cards */
+.card {
+    opacity: 0;
+    transform: translateY(20px); /* Slight downward offset */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* State when the card comes into view */
+.card.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Moves to its original position */
+}
+
+
+
+
 .mentors-title {
     width: 80%;
     margin: 10em auto 0 auto;

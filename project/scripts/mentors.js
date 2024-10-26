@@ -99,3 +99,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchMentors();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Fetch mentors function
+    async function fetchMentors() {
+        try {
+            const response = await fetch('data/mentors.json'); // Ensure the path is correct
+            const mentors = await response.json();
+            const mentorCardsContainer = document.getElementById("mentor-cards");
+
+            
+
+            // Start observing each card once they are added to the DOM
+            observeMentorCards();
+        } catch (error) {
+            console.error("Error fetching mentor data:", error);
+        }
+    }
+
+    // Observer setup for scroll animations
+    function observeMentorCards() {
+        const cards = document.querySelectorAll(".card");
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target); // Stop observing once in view
+                }
+            });
+        }, {
+            threshold: 0.5 // Trigger when 50% of the card is visible
+        });
+
+        cards.forEach(card => observer.observe(card));
+    }
+
+    // Fetch mentors and initialize the observer
+    fetchMentors();
+});
