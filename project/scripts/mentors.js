@@ -79,7 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Full Name:", fullName);
             console.log("Email:", email);
             console.log("Message:", message);
-            // Here you would typically send the data to a server
+
+            // Save data to LocalStorage instead of sending it to a server
+            const messageData = { fullName, email, message };
+            localStorage.setItem("mentorMessageData", JSON.stringify(messageData));
 
             // Show thank you modal after submission
             modal.style.display = "none"; // Close the message modal
