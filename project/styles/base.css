@@ -40,7 +40,7 @@ header {
 
 .image-logo img {
     width: 5rem;
-    margin: .1em 8em .1em 2em;
+    margin: 1em 8em 1em 2em;
 }
 
 
@@ -120,6 +120,7 @@ nav a.active-menu-link {
 #menubutton.open::before {
     content: "X"; /* Close icon when open */
     font-weight: 600;
+    font-family: "Montserrat";
 }
 
 @media (max-width: 999px) {
