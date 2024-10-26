@@ -1,6 +1,6 @@
 [
   {
-      "image": "images/mentor1.png",
+      "image": "images/mentor1.webp",
       "name": "John Smith",
       "job_role": "Software Engineer",
       "company": "Google",
@@ -9,7 +9,7 @@
       "location": "Mountain View, CA"
   },
   {
-      "image": "images/mentor2.png",
+      "image": "images/mentor2.webp",
       "name": "Alice Johnson",
       "job_role": "Data Scientist",
       "company": "Facebook",
@@ -18,7 +18,7 @@
       "location": "Menlo Park, CA"
   },
   {
-      "image": "images/mentor3.png",
+      "image": "images/mentor3.webp",
       "name": "Gwen Lee",
       "job_role": "Product Manager",
       "company": "Amazon",
@@ -27,7 +27,7 @@
       "location": "Seattle, WA"
   },
   {
-      "image": "images/mentor4.png",
+      "image": "images/mentor4.webp",
       "name": "Emma Brown",
       "job_role": "UX Designer",
       "company": "Microsoft",
@@ -45,7 +45,7 @@
       "location": "Armonk, NY"
   },
   {
-      "image": "images/mentor6.png",
+      "image": "images/mentor6.webp",
       "name": "Linda Martinez",
       "job_role": "Cybersecurity Specialist",
       "company": "Cisco",
@@ -54,7 +54,7 @@
       "location": "San Jose, CA"
   },
   {
-      "image": "images/mentor7.png",
+      "image": "images/mentor7.webp",
       "name": "David Anderson",
       "job_role": "Marketing Director",
       "company": "Apple",

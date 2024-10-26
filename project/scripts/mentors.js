@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = "none"; // Close the message modal
             thankYouModal.style.display = "block"; // Show thank you modal
 
-            // Clear input fields (optional)
+            // Input fields
             document.getElementById("fullName").value = "";
             document.getElementById("email").value = "";
             document.getElementById("messageText").value = "";
