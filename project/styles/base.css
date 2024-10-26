@@ -543,8 +543,9 @@ label {
 .join-title {
     grid-column: 1 / 2;
     text-align: center;
-    margin: 4em 0 1em 0;
+    margin: 4em 1em 1em 1em;
     font-size: 2rem;
+    font-weight: 900;
 }
 
 .join-layout h2 {
