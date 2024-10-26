@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const img = document.createElement("img");
                 img.src = testimonial.image_url;
                 img.alt = `${testimonial.name}'s photo`;
+                img.style.width = "80px";
+                img.style.height = "80px";
                 testimonialDiv.appendChild(img);
 
                 // Create a div for text content to organize better
