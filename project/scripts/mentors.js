@@ -1,13 +1,15 @@
+// Author: Adson Mettler do Nascimento
+
 document.addEventListener("DOMContentLoaded", () => {
     // Function to fetch and display mentors
     async function fetchMentors() {
         try {
-            const response = await fetch('data/mentors.json'); // Ensure the .json file path is correct
+            const response = await fetch('data/mentors.json');
             const mentors = await response.json();
 
             const mentorCardsContainer = document.getElementById("mentor-cards");
 
-            // Loop through each mentor and create a card
+            // Loop through each mentor and creating a card
             mentors.forEach(mentor => {
                 const card = document.createElement("div");
                 card.className = "card";
