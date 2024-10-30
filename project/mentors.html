@@ -64,11 +64,11 @@
         <div id="mentor-cards" class="card-container"></div> <!-- Container for displaying member info -->
 
         <!-- Modal -->
-        <div id="messageModal" class="modal">
+        <div id="messageModal" class="modal" aria-labelledby="modalTitle" aria-describedby="modalDescription">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
-                <h2>Write a Message</h2>
-                <p>Introduce yourself, mention your background, and ask interesting questions related to the mentor's field. This is your chance to get the mentor's attention.</p>
+                <h2 id="modalTitle">Write a Message</h2>
+                <p id="modalDescription">Introduce yourself, mention your background, and ask interesting questions related to the mentor's field. This is your chance to get the mentor's attention.</p>
                 
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" placeholder="Your full name" required>
