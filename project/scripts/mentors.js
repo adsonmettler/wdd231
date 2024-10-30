@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 mentorCardsContainer.appendChild(card);
             });
+
+        // Start observing each card after they're added to the DOM
+        observeMentorCards();
+
         } catch (error) {
             console.error("Error fetching mentor data:", error);
         }
@@ -120,6 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+
+
     // Observer setup for scroll animations
     function observeMentorCards() {
         const cards = document.querySelectorAll(".card");
@@ -138,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cards.forEach(card => observer.observe(card));
     }
 
-    // Fetch mentors and initialize the observer
+    // Modal handling code follows...
+
     fetchMentors();
 });
