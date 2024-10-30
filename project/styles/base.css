@@ -692,6 +692,7 @@ label {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1200px;
+    min-height: 200px;
 }
 
 .footer-links {
@@ -700,6 +701,12 @@ label {
     flex-wrap: wrap;
     width: 70%;
 }
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
 
 
 .footer-section {
